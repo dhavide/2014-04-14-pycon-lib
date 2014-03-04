@@ -31,28 +31,12 @@ eventbrite: 10812972893
 <iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" height="250" width="100%" scrolling="auto"></iframe>
 {% endif %}
 
-<!-- This block displays the instructors' names if they are available. -->
-{% if page.instructor %}
-<p>
-  <strong>Instructors:</strong>
-  {{page.instructor | join: ', ' %}}
-</p>
-{% endif %}
-
-<!--
-    Modify this block to reflect the target audience for your bootcamp.
-    In particular, if it is only open to people from a particular institution,
-    or if specialized prerequisite knowledge is required, please mention that.
--->
 <p>
   <strong>Who:</strong>
   The course is aimed at librarians and other information management professionals,
   particularly those whose day-to-day work involves wrangling data.
 </p>
 
-<!--
-    This block displays the address and links to a map showing directions.
--->
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
@@ -79,6 +63,24 @@ eventbrite: 10812972893
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
   for more information.
+</p>
+
+{% if page.instructor %}
+<p>
+  <strong>Instructors:</strong>
+  {{page.instructor | join: ', ' %}}
+</p>
+{% endif %}
+
+<hr/>
+
+<h2>Sponsors</h2>
+<p>
+  <a href="https://www.enthought.com/"><img src="./img/enthoughtPyCon.png" alt="Enthought" /></a>
+</p>
+<p>
+  Our thanks to <a href="https://www.enthought.com/">Enthought</a> for their
+  generous sponsorship of this bootcamp.
 </p>
 
 <hr/>
