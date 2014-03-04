@@ -1,53 +1,34 @@
 ---
 layout: bootcamp
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
-country: United-States
-humandate: Feb 17-18, 2020
+venue: PyCon
+address: Palais de Congres, Montreal, Quebec
+country: Canada
+humandate: Apr 14-15, 2014
 humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
-registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
+startdate: 2014-04-14
+enddate: 2014-04-15
+latlng: 45.530677,-73.624497
+registration: open
+instructor: ["Greg Wilson"]
 contact: admin@software-carpentry.org
+eventbrite: 10812972893
 ---
-<!--
-    Edit the values in the parameter block above to be appropriate for your bootcamp.
-    Please use three-letter month names for the 'humandate' field.
--->
-
-<!-- Remove the block below. -->
-<div align="center">
-  <p><strong><em>
-      This page is a template for bootcamp home pages.
-      <br/>
-      Please see
-      <a href="https://github.com/swcarpentry/bc">https://github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your bootcamp.
-  </em></strong></p>
-</div>
-
-<!--
-    This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
--->
-{% if page.eventbrite %}
-<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
-{% endif %}
-
 <h2>General Information</h2>
 
 <p>
   <a href="http://software-carpentry.org">Software Carpentry</a>'s mission
-  is to help scientists and engineers become more productive
-  by teaching them basic lab skills for computing
+  is to help people become more productive
+  by teaching them basic computing skills
   like program design, version control, data management, and task automation.
   This two-day hands-on bootcamp will cover basic concepts and tools;
   participants will be encouraged to help one another
   and to apply what they have learned to their own research problems.
 </p>
+
+{% if page.eventbrite %}
+<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
+{% endif %}
 
 <!-- This block displays the instructors' names if they are available. -->
 {% if page.instructor %}
@@ -64,7 +45,8 @@ contact: admin@software-carpentry.org
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at librarians and other information management professionals,
+  particularly those whose day-to-day work involves wrangling data.
 </p>
 
 <!--
@@ -81,19 +63,12 @@ contact: admin@software-carpentry.org
 </p>
 {% endif %}
 
-<!--
-    Modify the block below if there are any special requirements.
--->
 <p>
   <strong>Requirements:</strong>
   Participants must bring a laptop with a few specific software packages installed
   (listed below).
 </p>
 
-<!--
-    This block automatically inserts a contact email address if one has been specified for the page.
-    If one hasn't, this block inserts the generic contact address for Software Carpentry.
--->
 <p>
   <strong>Contact</strong>:
   Please mail
@@ -107,9 +82,6 @@ contact: admin@software-carpentry.org
 
 <hr/>
 
-<!--
-    Edit this block to show the syllabus and schedule for your bootcamp.
--->
 <h2>Schedule</h2>
 
 <table class="table table-striped">
@@ -129,11 +101,6 @@ contact: admin@software-carpentry.org
 </table>
 
 <hr/>
-
-<!--
-    Edit the setup instructions in _includes/setup.html to reflect your bootcamp.
-    (In particular, most bootcamps teach either Python or R, not both.)
--->
 
 <h2>Setup</h2>
 
